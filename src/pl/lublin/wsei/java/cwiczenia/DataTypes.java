@@ -1,3 +1,5 @@
+package pl.lublin.wsei.java.cwiczenia;
+
 public class DataTypes {
     public static void main(String[] args) {
 

@@ -1,6 +1,10 @@
+/*package pl.lublin.wsei.java.cwiczenia;
+
+import pl.lublin.wsei.java.cwiczenia.Employee;
+
 public class CarShop {
     public static void main(String[] args) {
-        Car audi = new Car();
+        Employee.Car audi = new Employee.Car();
         audi.brand ="Audi";
         audi.model = "A4";
         audi.doors = 4;
@@ -21,4 +25,4 @@ public class CarShop {
 
 
 
-}
+}*/

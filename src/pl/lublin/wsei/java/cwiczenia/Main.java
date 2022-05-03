@@ -120,7 +120,7 @@ public class Main {
         System.out.println(x*y%2==0); //sprawdzenie czy jest parzysta*/
 
         //OPERACJE NA ZMIENNYCH EX2
-        Scanner scanner = new Scanner(System.in);
+       /* Scanner scanner = new Scanner(System.in);
         System.out.println("Podaj kwotę netto: ");
         double netto = scanner.nextDouble();
         System.out.println("Podaj stawkę VAT: ");
@@ -130,6 +130,33 @@ public class Main {
         System.out.println(VAT);
         double brutto=netto+VAT;
         System.out.println(brutto);
+*/
+
+        //Employee employee1 = new Employee("Stanisław", "Wioślarz", 1988, 3);
+
+
+        // Employee employee1 = new Employee("Stanisław", "Wioślarz", 1988, 3);
+        // System.out.println(employee1);
+
+//AGREGACJA I KOMPOZYCJA
+        /*Address2 address2_1 = new Address2("Lwowska", 3, "Lublin", "20-809");
+
+        Seller seller1 = new Seller("Irmina", "Górecka");
+        seller1.sellerAddress=address2_1;
+
+        Auction auction1 = new Auction("Xbox", "xyz", 999.0);
+        auction1.seller=seller1;
+
+        System.out.println("Aukcja 1: \n" + auction1.seller.name + " " + auction1.thingToSell+ " " + auction1.description+ " " + auction1.price+ " " + seller1.sellerAddress.city);
+
+        Seller seller2= new Seller("Tomasz", "Kot");
+        seller2.sellerAddress=null;
+        System.out.println(seller1.sellerAddress);*/
+
+
+
+
+
 
 
     }
