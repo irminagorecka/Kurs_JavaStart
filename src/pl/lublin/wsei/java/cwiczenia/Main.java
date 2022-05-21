@@ -1,11 +1,15 @@
 package pl.lublin.wsei.java.cwiczenia;
 
+import org.w3c.dom.ls.LSOutput;
+
+import java.lang.reflect.Array;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
 
     public static void main(String[] args) {
-
+        Scanner scanner = new Scanner(System.in);
       /*  //DATA TYPES ex1
         int age = 24;
         String initials = "IG";
@@ -154,10 +158,133 @@ public class Main {
         System.out.println(seller1.sellerAddress);*/
 
 
+//METODY I KONSTRUKTORY
+
+//ex1
+        /*Jednostki jednostki = new Jednostki();
+        double wynik = jednostki.cmNaM(100);
+        System.out.println(wynik);*/
 
 
+//PRZECIĄŻANIE METOD I THIS
+//ex 2
+
+    /*Dice dice = new Dice();
+    dice.roll();
+    dice.show();
+    dice.roll();
+    dice.show();
+    dice.roll();
+    dice.show();*/
+
+//STRUKTURY STERUJĄCE
+
+        /*System.out.println("Wybierz opcję:");
+        System.out.println("0 - wyjście z programu");
+        System.out.println("1 - wyświetl informacje o użytkowniku");
+        System.out.println("2 - modyfikuj dane użytkownika");
+
+        int option = scanner.nextInt();
+if (option==0){
+    System.out.println("bye");
+}else if(option==1){
+    System.out.println("show info about user");
+}else if(option==2){
+    System.out.println("modify users data");
+}else{
+    System.out.println("wrong number");
+}*/
+        /*System.out.println("Podaj imię");
+        String name = scanner.nextLine();
+switch(name) {
+    case "Ala" : System.out.println("hej Ala");
+    break;
+    case "Ola" : System.out.println("hej Ola");
+    break;
+    case "Krzyś" : System.out.println("hej Krzyś");
+    break;
+    default:
+        System.out.println("nie znam tego imienia");
+}*/
+
+//TABLICE JEDNOWYMIAROWE
+
+        /*int[] intArray = new int[5];
+        
+        intArray[0]=1;
+        intArray[1]=13;
+        intArray[2]=8;
+        intArray[3]=7;
+        intArray[4]=2;
+        System.out.println(intArray.length);
+
+        String[] stringArray = {"Kasia", "Basia", "Jola"};
+        System.out.println(stringArray[0]+stringArray[1]+stringArray[2]);
+*/
+
+        /*//przypisywanie nowych obiektów do tablicy
+        Employee[] employees = new Employee[20]; //tworzę nową tablicę new Employee[20]; i Ctrl Alt V
+        employees[0] = new Employee("Irmina", "Górecka", 1998, 5); //tworzę nowego pracownika jak nowy obiekt i od razu przypisuję go jako 1 element tablicy
+        System.out.println(employees[0].getName());
+        */
+
+//ex1
+        /*int[] tab1 = new int[3];
+        int[] tab2 = new int[3];
+
+        int[] tab3 = {1, 2, 3};
+
+        int[] tablica=tab3;
+
+        System.out.println(tab2.length);
+
+        for (int i = 0; i < tab3.length; i++) { //wyświetla elementy
+            System.out.println(tab3[i]);
+        }
+
+        System.out.println(Arrays.stream(tab3).sum()); //wyświetla sumę elementów tablicy
+*/
+
+//TABLICE WIELOWYMIAROWE
+
+    //tworzenie tablicy wielowymiarowej z już istniejących
+        /*int[] tab1 = new int[1000]; //tworzę trzy pojedyncze tablice
+        int[] tab2 = new int[100];
+        int[] tab3 = new int[10];
+
+        int[][] tab3D = new int[3][]; //łączę pojedyncze tablice w jedną 3-wymiarową
+        tab3D[0]=tab1;
+        tab3D[1]=tab2;
+        tab3D[2]=tab3;
+
+        tab3D[2][6]=99; //inicjalizajca szóstego elementu drugiej tablicy
+
+        System.out.println(tab3D.length); //ilość 'tablic' z jakich sklada się tab3D
+        System.out.println(tab1.length); //ilość elementów w tab1
+        System.out.println(tab3D[2][6]); //wartość szóstego elementu drugiej tablicy
+    */
+
+    //tworzenie tab wielowymiarowej
+       /* int[][] ints = new int[2][3];//deklaracja
+        ints[0][2]=99;//inicjalizacja elementu
+        System.out.println(ints[0][2]);*/
+
+//ex1
+        double[] wartosci1 = {1.0, 1.5, 2.0};
+        double[] wartosci2 = {1.5, 2.0, 2.5};
+        double[] wartosci3 = {2.0, 2.5, 3.0};
+
+        double[][] doubles = new double[3][];
+
+        doubles[0]=wartosci1;
+        doubles[1]=wartosci2;
+        doubles[2]=wartosci3;
+
+        double diagonalSum=(doubles[0][0]*doubles[1][1]*doubles[2][2]) + (doubles[0][2]*doubles[1][1]*doubles[2][0]);//suma iloczynów przekątnych tablicy
+        System.out.println(diagonalSum);
 
 
 
     }
+
 }

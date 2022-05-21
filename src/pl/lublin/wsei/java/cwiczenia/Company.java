@@ -9,9 +9,9 @@ public class Company {
         Employee employee2 = new Employee("Anna", "Kwiatkowska", 1988, 3);
         Employee employee3 = new Employee("Tomasz", "Ogórek", 1991, 5);
 
-       System.out.println(employee1.name + employee1.surname + employee1.yearOfBirth + employee1.yearsOfExperience);
-        System.out.println(employee2.name + employee2.surname + employee2.yearOfBirth + employee2.yearsOfExperience);
-        System.out.println(employee3.name + employee3.surname + employee3.yearOfBirth + employee3.yearsOfExperience);
+       //System.out.println(employee1.this.name + employee1.surname + employee1.yearOfBirth + employee1.yearsOfExperience); //zmienić na gettery
+        System.out.println(employee2.getName() + employee2.getSurname() + employee2.getYearOfBirth() + employee2.getYearsOfExperience());
+        //System.out.println(employee3.name + employee3.surname + employee3.yearOfBirth + employee3.yearsOfExperience); //zmienić na gettery
     }
 
 }
