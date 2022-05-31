@@ -247,7 +247,7 @@ switch(name) {
 
 //TABLICE WIELOWYMIAROWE
 
-    //tworzenie tablicy wielowymiarowej z już istniejących
+        //tworzenie tablicy wielowymiarowej z już istniejących
         /*int[] tab1 = new int[1000]; //tworzę trzy pojedyncze tablice
         int[] tab2 = new int[100];
         int[] tab3 = new int[10];
@@ -264,13 +264,13 @@ switch(name) {
         System.out.println(tab3D[2][6]); //wartość szóstego elementu drugiej tablicy
     */
 
-    //tworzenie tab wielowymiarowej
+        //tworzenie tab wielowymiarowej
        /* int[][] ints = new int[2][3];//deklaracja
         ints[0][2]=99;//inicjalizacja elementu
         System.out.println(ints[0][2]);*/
 
 //ex1
-        double[] wartosci1 = {1.0, 1.5, 2.0};
+       /* double[] wartosci1 = {1.0, 1.5, 2.0};
         double[] wartosci2 = {1.5, 2.0, 2.5};
         double[] wartosci3 = {2.0, 2.5, 3.0};
 
@@ -281,10 +281,104 @@ switch(name) {
         doubles[2]=wartosci3;
 
         double diagonalSum=(doubles[0][0]*doubles[1][1]*doubles[2][2]) + (doubles[0][2]*doubles[1][1]*doubles[2][0]);//suma iloczynów przekątnych tablicy
-        System.out.println(diagonalSum);
+        System.out.println(diagonalSum);*/
+
+
+//PĘTLE
+
+      /*  int[] intArray = new int[10];
+        for (int i = 0; i < intArray.length; i++) {
+            intArray[i]=i+1;
+        }
+        for (int i = 0; i < intArray.length;i++) {
+            System.out.println("Liczba: "+intArray[i]);
+        }
+        for (int array:intArray) {
+            System.out.println("Liczba: "+array);
+        }*/
+
+        //System.out.println("Podaj liczbę: ");//lepiej pętlą do...while
+        //int x = scanner.nextInt();
+        /*int x;
+        while ((x = scanner.nextInt()) !=0){
+            System.out.println("Podaj liczbę: ");
+            x = scanner.nextInt();
+            System.out.println("liczba to"+x);
+        }*/
+//int x=2;
+/*while (x<=5){
+    System.out.println("liczba "+x);
+    x++;
+        }*/
+
+/*do {
+    System.out.println(x++);
+}while(x<6);*/
+
+       /*for(int i=0; i<3; i++) {
+            System.out.println("Jestem wesołą pętelką");
+        }*/
+
+//ex1
+        /*System.out.println("Ile liczb chcesz zsumować: ");
+        int ileLiczb = scanner.nextInt();
+
+        int sum=0;
+
+        while (ileLiczb-- >0){
+            System.out.println("podaj kolejną liczbę:");
+            sum=sum+scanner.nextInt();
+        }
+
+        System.out.println(sum);*/
+
+//POLIMORFIZM
+
+        /*Dog dog = new Dog("Lola");
+        Cat cat = new Cat("Kitty");
+        Animal animal = new Animal("Zwierzę");
+
+        dog.giveSound();
+        cat.giveSound();
+        animal.giveSound();*/
+
+
+        //żeby można było przetrzymywać w tablicy:
+
+       /* Animal[] animals = new Animal[3];
+        animals[0] = new Dog("Burek");
+        animals[1] = new Cat("Mruczek");
+        animals[2] = new Animal("Zwierzę");
+
+        for (Animal animal : animals) {
+            animal.giveSound();
+        }
+
+        private static void changeName (Animal animal, String newName){
+            animal.setName(newName);
+        }*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
     }
+
+
+
 
 }
